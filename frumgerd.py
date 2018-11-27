@@ -1,5 +1,4 @@
 def print_options():
-    print("Veldu valmöguleika")
     print("1.  Viðskiptavinir")
     print("2.  Bílafloti")
     print("3.  Afgreiðsla")
@@ -55,8 +54,6 @@ def skra_vidskiptavin():
     print("Viðskiptavinur {} hefur verið skráður".format(nafn))
     print()
     print_options()
-    # Hér eigum við eftir að bæta við virkni sem tekur inn kreditkortanúmer sem
-    # tryggingu
 
 def afskra_vidskiptavin():
     kt = input("Hvern a að afskrá? (kennitala): ")
@@ -225,8 +222,6 @@ def skra_bil():
     print("Bíllinn {} hefur verið skráður!".format(bilnumer))
     print()
     print_options()
-    #Hér eigum við eftir að bæta við virkni til þess að geyma lit, gerð, verð
-    # og fleiri upplýsingar um bílinn sem myndu vera attributes í klasa
 
 def afskra_bil():
     bilnumer = input("Bílnúmer: ")
@@ -357,7 +352,7 @@ def kostnadarmat():
     # val = input("Veldu bíl (AA-X99): ")
     # við fáum tímabil frá fletta_pontun og mínusum fyrra tímabilið frá því seinna
     # þá fáum við hve marga daga viðkomandi hefur bílinn og margföldum dagana við dagskostnaðinn
-    dagar = dagur_b - dagur_a + 1
+    dagar = dagur_b - dagur_a
     verd_samtals = dagar*bill_verd
     print("Kostnaðarmat:", verd_samtals, "Kr.")
     print()
