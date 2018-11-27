@@ -398,34 +398,37 @@ def breyta_pontun():
     print_options()
 
 def fletta_pontun():
-    kt = input("Hver er kennitalan?")
+    kt = input("Kennitala pöntunar: ")
     print("Viðskiptavinurinn Ásgeir Jónasson, kt. {} hefur pantað bílinn SB-463 á tímabilinu 10/12/18 til 14/12/18".format(kt))
     print()
     print_options()
 
 def bakfaera_pontun():
     # fletta_pontun()
-    kt = input("Hver er kennitalan?")
-    print("Þín pöntun er frá 10/12/18 til 14/12/18 á rauðan jeppa, SB-463")
+    kt = input("Kennitala pöntunar: ")
+    print("Viðskiptavinurinn Ásgeir Jónasson, kt. {} hefur pantað bílinn\n SB-463 á tímabilinu 10/12/18 til 14/12/18".format(kt))
     choice = input("Viltu eyða þessari pöntun? (y/n)")
     if(choice == "y"):
-        print("Því hefur verið eytt")
+        print("Pöntuninni hefur verið eytt")
     else:
         print("Hætt við")
     print()
     print_options()
 
+def main():
+  print()
+  print("Velkomin í Bílaleiguna IceCarRentals.")
+  print("-"*37)
+  n = 7
+  print("{}        _______".format(" "*n))
+  print("{}       //  ||\ \ ".format(" "*n))
+  print("{}  ____//___||_\ \__".format(" "*n))
+  print("{} )  _          _    \ ".format(" "*n))
+  print("{} |_/ \________/ \___|".format(" "*n))
+  print("{}___\_/________\_/_____".format(" "*n))
+  print("{}Drive cheap, not safe!".format(" "*n))
+  print("-"*37)
+  print_options()
 
-print("Velkomin í Bílaleiguna IceCarRentals.")
-n = 7
-print("{}        _____".format(" "*n))
-print("{}      //  ||\ \ ".format(" "*n))
-print("{} ____//___||_\ \__".format(" "*n))
-print("{} )  _          _    \ ".format(" "*n))
-print("{} |_/ \________/ \___|".format(" "*n))
-print("{}__\_/________\_/_____".format(" "*n))
 
-print("{}Drive cheap, not safe!".format(" "*n))
-
-print()
-print_options()
+main()
