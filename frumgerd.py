@@ -136,6 +136,8 @@ def breyta_vidskiptavin():
     print("Kennitala: 2903983209")
     print("Símanr: 8886785")
     print("Netfang: " + netfang)
+    print("Kreditkortanúmer: 1234-1234-1234-1234")
+
     print("Breyta: ")
     print("1. Nafni")
     print("2. Símanúmeri")
@@ -335,6 +337,7 @@ def afgreidsla_options():
         print_options()
 
 def skra_pontun():
+    kt = input("Kennitala/netfang: ")
     print("Leigutímabil?")
     fra = input("Frá (YYYY, MM, DD): ")
     til = input("Til (YYYY, MM, DD): ")
